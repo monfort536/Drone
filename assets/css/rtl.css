@@ -1,0 +1,48 @@
+/* RTL Override */
+body[dir="rtl"] {
+  text-align: right;
+}
+
+body[dir="rtl"] .navbar-brand {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+body[dir="rtl"] .dropdown-item-custom:hover {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+body[dir="rtl"] .social-links a {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+body[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+body[dir="rtl"] .blog-meta {
+  padding-right: 0;
+}
+
+body[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+body[dir="rtl"] .me-3 {
+  margin-right: 0 !important;
+  margin-left: 1rem !important;
+}
+
+/* Keep button content flowing from right to left with the page. */
+body[dir="rtl"] .btn {
+  direction: rtl;
+}
+
+body[dir="rtl"] .btn .bi-arrow-right,
+body[dir="rtl"] .btn .bi-arrow-left {
+  transform: scaleX(-1);
+}

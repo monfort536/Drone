@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkyVision - Premium Drone Services</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<link href="assets/css/dark-mode.css" rel="stylesheet"/>
+<link href="assets/css/rtl.css" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230EA5E9'&gt;&lt;path d='M10 3c0 1.313-.304 2.508-.8 3.4a1.991 1.991 0 0 0-1.484-.38c-.28-.982-.482-2.015-.482-3.02 0-1.69.566-2.906 1.144-2.906.577 0 1.622 1.216 1.622 2.906zm-1.879 2.08a4.484 4.484 0 0 1-1.636 1.272 2.01 2.01 0 0 0-1.464-.53 4.298 4.298 0 0 0-.256-3.064c-.45-.8-1.56-1.39-1.92-1.226-.358.163.46 1.394 1.026 2.454.493.923 1.22 1.838 2.007 2.492a2.003 2.003 0 0 0 1.487 1.396 4.49 4.49 0 0 1-.504 1.98 2.008 2.008 0 0 0-1.56.09 4.3 4.3 0 0 0-2.453-1.89c-.87-.272-2.05-.13-2.128.263-.08.39.99.98 2.04 1.554.912.497 1.936.87 2.89 1.002a2.004 2.004 0 0 0 1.02 1.89c-.644.97-1.127 2.115-1.127 3.3 0 1.69.566 2.906 1.144 2.906.577 0 1.622-1.216 1.622-2.906 0-1.313-.304-2.508-.8-3.4a1.991 1.991 0 0 0-1.484-.38c-.28-.982-.482-2.015-.482-3.02 0-1.69.566-2.906 1.144-2.906.577 0 1.622 1.216 1.622 2.906zm1.88 4.84a4.484 4.484 0 0 1 1.636-1.272 2.01 2.01 0 0 0 1.464.53 4.298 4.298 0 0 0 .256 3.064c.45.8 1.56 1.39 1.92 1.226.358-.163-.46-1.394-1.026-2.454-.493-.923-1.22-1.838-2.007-2.492a2.003 2.003 0 0 0-1.487-1.396 4.49 4.49 0 0 1 .504-1.98 2.008 2.008 0 0 0 1.56-.09 4.3 4.3 0 0 0 2.453 1.89c.87.272 2.05.13 2.128-.263.08-.39-.99-.98-2.04-1.554-.912-.497-1.936-.87-2.89-1.002a2.004 2.004 0 0 0-1.02-1.89z'/&gt;&lt;/svg&gt;" rel="icon"/>
+<link href="assets/css/animations.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-xl navbar-custom fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="index.html">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary me-2 mb-1"><rect x="9" y="9" width="6" height="6" rx="2"/><path d="M12 15v2"/><path d="M10 17h4"/><path d="M14 10l4-4"/><path d="M10 10L6 6"/><path d="M14 14l4 4"/><path d="M10 14l-4 4"/><ellipse cx="18" cy="6" rx="3" ry="1.5" transform="rotate(45 18 6)"/><ellipse cx="6" cy="6" rx="3" ry="1.5" transform="rotate(-45 6 6)"/><ellipse cx="18" cy="18" rx="3" ry="1.5" transform="rotate(-45 18 18)"/><ellipse cx="6" cy="18" rx="3" ry="1.5" transform="rotate(45 6 18)"/></svg>SKYVISION
+      </a>
+<div class="d-flex align-items-center gap-2 d-xl-none">
+<button class="nav-icon-btn d-flex align-items-center justify-content-center rtl-toggle-btn" style="width:36px; height:36px; transition:0.3s;" title="Toggle RTL"><span class="rtl-label">RTL</span></button>
+<button class="nav-icon-btn d-flex align-items-center justify-content-center theme-toggle-btn" style="width:36px; height:36px; transition:0.3s;" title="Toggle Dark Mode"><i class="bi bi-moon-stars theme-icon"></i></button>
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0 shadow-none p-0" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+<i class="bi bi-list fs-1 text-primary"></i>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav mx-auto mb-2 mb-xl-0 fw-medium">
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle px-xl-3" data-bs-toggle="dropdown" href="#" id="homeDropdown" role="button">Home</a>
+<ul class="dropdown-menu shadow-lg">
+<li><a class="dropdown-item" href="index.html">Cinematic Aerials</a></li>
+<li><a class="dropdown-item" href="home-2.html">Enterprise SaaS</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link px-xl-3" href="about-2.html">About</a></li>
+<li class="nav-item"><a class="nav-link px-xl-3" href="services-2.html">Services</a></li>
+<li class="nav-item"><a class="nav-link px-xl-3" href="portfolio-2.html">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link px-xl-3" href="pricing-2.html">Pricing</a></li>
+<li class="nav-item"><a class="nav-link px-xl-3" href="blog-2.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link px-xl-3" href="contact-2.html">Contact</a></li>
+</ul>
+<div class="navbar-controls d-flex align-items-center gap-3 mt-3 mt-xl-0 pb-3 pb-xl-0">
+<div class="d-none d-xl-flex align-items-center gap-3">
+<!-- RTL Toggle -->
+<button class="nav-icon-btn d-flex align-items-center justify-content-center" id="rtlToggle" style="width:36px; height:36px; transition:0.3s;" title="Toggle RTL">
+<span class="rtl-label">RTL</span>
+</button>
+<!-- Dark Mode Toggle -->
+<button class="nav-icon-btn d-flex align-items-center justify-content-center" id="themeToggle" style="width:36px; height:36px; transition:0.3s;" title="Toggle Dark Mode">
+<i class="bi bi-moon-stars" id="themeIcon"></i>
+</button>
+</div>
+<div class="d-none d-xl-block border-end border-secondary border-opacity-25 h-50 mx-1" style="width:1px;"></div>
+<!-- Auth Links -->
+<a class="nav-link fw-medium transition-03 auth-login-btn" href="login.html">Login</a>
+<a class="btn btn-primary btn-sm rounded-pill px-4 py-2 fw-medium shadow-sm auth-register-btn" href="register.html">Sign Up</a>
+</div>
+</div>
+</div>
+</nav>
+<section class="premium-inner-hero position-relative overflow-hidden">
+<!-- Animated Tech Grid Background -->
+<div class="position-absolute top-0 start-0 w-100 h-100 opacity-25" style="background-image: radial-gradient(rgba(14, 165, 233, 0.2) 1px, transparent 1px); background-size: 30px 30px; animation: panGrid 60s linear infinite;"></div>
+<!-- Glowing Orb -->
+<div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 50vw; height: 50vw; max-width: 600px; max-height: 600px; background: radial-gradient(circle, rgba(14,165,233,0.1) 0%, transparent 70%); filter: blur(40px); pointer-events: none;"></div>
+<div class="container position-relative z-1">
+<div class="row align-items-center justify-content-between">
+<div class="col-lg-6 mb-5 mb-xl-0 fade-up">
+<!-- Breadcrumbs -->
+<div class="d-inline-flex align-items-center mb-4 gap-2 px-4 py-2 rounded-pill border border-secondary border-opacity-25 bg-transparent mb-4 shadow-sm">
+<a class="text-muted text-decoration-none small hover-primary transition-03" href="home-2.html"><i class="bi bi-house-door me-1"></i>Home</a>
+<i class="bi bi-chevron-right text-muted" style="font-size:0.7rem;"></i>
+<span class="text-primary small fw-medium text-uppercase tracking-wider">Portfolio</span>
+</div>
+<!-- Main Title -->
+<h1 class="display-3 fw-bold mb-4 text-dark">Enterprise Case Studies &amp; Applications.</h1>
+<!-- Accent Line -->
+<div class="mb-4 rounded-pill mb-4" style="width: 80px; height: 4px; background: linear-gradient(90deg, var(--cyan), var(--electric-blue)); box-shadow: 0 0 15px rgba(6,182,212,0.3);"></div>
+<!-- Subtitle -->
+<p class="lead text-muted mb-5" style="font-weight: 300; font-size: 1.1rem;">Discover how our aerial intelligence platform drives ROI for enterprise clients.</p>
+<div class="d-flex gap-3 mt-4">
+<a class="btn btn-primary rounded-pill px-4 py-2 shadow-sm" href="contact-2.html">Get Started <i class="bi bi-arrow-right ms-2"></i></a>
+<a class="btn btn-outline-secondary rounded-pill px-4 py-2" href="services-2.html">Explore Features</a>
+</div>
+</div>
+<div class="col-lg-5 fade-up" style="transition-delay: 0.2s;">
+<div class="position-relative">
+<div class="position-absolute top-0 start-0 w-100 h-100 rounded-4" style="background: linear-gradient(135deg, var(--sky-blue), var(--electric-blue)); transform: translate(-15px, 15px); opacity: 0.2;"></div>
+<img alt="Hero Image" class="img-fluid rounded-4 shadow-lg position-relative z-1" src="assets/images/hero/hero_portfolio_saas.jpg" style="border: 1px solid rgba(255,255,255,0.1); object-fit: cover; aspect-ratio: 4/3;"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section-padding bg-light">
+<div class="container">
+<div class="masonry-wrapper fade-up">
+<a class="masonry-item" href="portfolio-details-1-2.html"><img alt="Coastal Surveying" src="assets/images/saas/port_saas_1.jpg"/><div class="masonry-overlay"><h4>Coastal Surveying</h4><p class="mb-0 text-white-50">Photogrammetry</p></div></a>
+<a class="masonry-item" href="portfolio-details-2-2.html"><img alt="AgriTech Yield Map" src="assets/images/saas/port_saas_2.jpg"/><div class="masonry-overlay"><h4>AgriTech Yield Map</h4><p class="mb-0 text-white-50">Precision Agriculture</p></div></a>
+<a class="masonry-item" href="portfolio-details-3-2.html"><img alt="Structural Integrity" src="assets/images/saas/srv_lidar.jpg"/><div class="masonry-overlay"><h4>Structural Integrity</h4><p class="mb-0 text-white-50">LiDAR Scanning</p></div></a>
+<a class="masonry-item" href="portfolio-details-4-2.html"><img alt="Stockpile Measurement" src="assets/images/saas/srv_volume.jpg"/><div class="masonry-overlay"><h4>Stockpile Measurement</h4><p class="mb-0 text-white-50">Volume Calculation</p></div></a>
+<a class="masonry-item" href="portfolio-details-5-2.html"><img alt="Urban Digital Twin" src="assets/images/saas/saas_1.png"/><div class="masonry-overlay"><h4>Urban Digital Twin</h4><p class="mb-0 text-white-50">Digital Twins</p></div></a>
+<a class="masonry-item" href="portfolio-details-6-2.html"><img alt="Industrial Heat Loss" src="assets/images/saas/saas_2.jpg"/><div class="masonry-overlay"><h4>Industrial Heat Loss</h4><p class="mb-0 text-white-50">Thermal Inspection</p></div></a>
+<a class="masonry-item" href="portfolio-details-7-2.html"><img alt="Automated Defect Spotting" src="assets/images/saas/saas_3.jpg"/><div class="masonry-overlay"><h4>Automated Defect Spotting</h4><p class="mb-0 text-white-50">AI Analysis</p></div></a>
+<a class="masonry-item" href="portfolio-details-8-2.html"><img alt="Offshore Wind Farm" src="assets/images/saas/saas_4.jpg"/><div class="masonry-overlay"><h4>Offshore Wind Farm</h4><p class="mb-0 text-white-50">Asset Management</p></div></a>
+<a class="masonry-item" href="portfolio-details-9-2.html"><img alt="Topographical Grid" src="assets/images/hero/hero_about_saas.jpg"/><div class="masonry-overlay"><h4>Topographical Grid</h4><p class="mb-0 text-white-50">Surveying</p></div></a>
+<a class="masonry-item" href="portfolio-details-10-2.html"><img alt="BVLOS Fleet Operations" src="assets/images/hero/hero_blog_saas.jpg"/><div class="masonry-overlay"><h4>BVLOS Fleet Operations</h4><p class="mb-0 text-white-50">Enterprise</p></div></a>
+<a class="masonry-item" href="portfolio-details-11-2.html"><img alt="Solar Array Inspection" src="assets/images/hero/hero_portfolio_saas.jpg"/><div class="masonry-overlay"><h4>Solar Array Inspection</h4><p class="mb-0 text-white-50">Radiometric</p></div></a>
+<a class="masonry-item" href="portfolio-details-12-2.html"><img alt="BIM AutoCAD Integration" src="assets/images/hero/hero_services_saas.jpg"/><div class="masonry-overlay"><h4>BIM AutoCAD Integration</h4><p class="mb-0 text-white-50">Architecture</p></div></a>
+</div>
+</div>
+</section>
+<!-- PRE-FOOTER CTA -->
+<section class="footer-cta py-5 mt-auto position-relative" style="background-color: #1E293B; border-top: 1px solid rgba(14,165,233,0.1);">
+<div class="position-absolute top-0 start-0 w-100 h-100 opacity-25" style="background-image: radial-gradient(rgba(14, 165, 233, 0.15) 1px, transparent 1px); background-size: 30px 30px; pointer-events: none;"></div>
+<div class="container text-center py-5 position-relative z-1">
+<h2 class="display-5 fw-bold text-white mb-4">Ready to Deploy Enterprise Aerial Intelligence?</h2>
+<p class="lead text-white-50 mx-auto mb-5" style="max-width: 700px;">From high-precision surveying to automated fleet management, our solutions architect team is ready to scale your aerial operations.</p>
+<div class="d-flex justify-content-center gap-3 flex-wrap">
+<a class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-sm" href="contact-2.html">Start Your Project</a>
+<a class="btn btn-outline-primary rounded-pill px-5 py-3 fw-bold" href="portfolio-2.html">Explore Case Studies &amp; Applications</a>
+</div>
+</div>
+</section>
+<!-- MAIN FOOTER 1 -->
+<footer class="footer-home2 position-relative pt-0 mt-auto">
+<!-- TOP DATA STRIP -->
+<div class="bg-primary py-4">
+<div class="container">
+<div class="row g-4 text-center">
+<div class="col-6 col-md-3">
+<h3 class="fw-bold text-white mb-0 counter-h2">500+</h3>
+<p class="text-white-50 small mb-0 text-uppercase tracking-wider">Projects Analyzed</p>
+</div>
+<div class="col-6 col-md-3">
+<h3 class="fw-bold text-white mb-0 counter-h2">98.7%</h3>
+<p class="text-white-50 small mb-0 text-uppercase tracking-wider">Data Accuracy</p>
+</div>
+<div class="col-6 col-md-3">
+<h3 class="fw-bold text-white mb-0 counter-h2">1,200+</h3>
+<p class="text-white-50 small mb-0 text-uppercase tracking-wider">Flight Hours</p>
+</div>
+<div class="col-6 col-md-3">
+<h3 class="fw-bold text-white mb-0 counter-h2">25+</h3>
+<p class="text-white-50 small mb-0 text-uppercase tracking-wider">Cities Covered</p>
+</div>
+</div>
+</div>
+</div>
+<!-- MAIN TECH FOOTER -->
+<div class="tech-footer-main pt-5 pb-4">
+<div class="container">
+<div class="row g-5 mb-5">
+<!-- LEFT PANEL -->
+<div class="col-lg-4 border-end border-secondary pe-lg-5">
+<a href="home-2.html" class="text-decoration-none"><h3 class="text-white mb-1 fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary me-2 mb-1"><rect x="9" y="9" width="6" height="6" rx="2"/><path d="M12 15v2"/><path d="M10 17h4"/><path d="M14 10l4-4"/><path d="M10 10L6 6"/><path d="M14 14l4 4"/><path d="M10 14l-4 4"/><ellipse cx="18" cy="6" rx="3" ry="1.5" transform="rotate(45 18 6)"/><ellipse cx="6" cy="6" rx="3" ry="1.5" transform="rotate(-45 6 6)"/><ellipse cx="18" cy="18" rx="3" ry="1.5" transform="rotate(-45 18 18)"/><ellipse cx="6" cy="18" rx="3" ry="1.5" transform="rotate(45 6 18)"/></svg>SKYVISION</h3>
+<p class="text-primary small fw-bold tracking-wider mb-4">AERIAL INTELLIGENCE PLATFORM</p></a>
+<p class="text-white-50 small mb-4">Advanced drone technology, aerial data collection, intelligent mapping, and real-time monitoring solutions for modern industries.</p>
+<div class="status-card-h2 p-3 rounded border border-secondary mb-4 d-inline-block">
+<p class="mb-0 text-white small fw-bold"><span class="status-dot-h2 bg-success rounded-circle d-inline-block me-2" style="width:10px;height:10px;"></span>ALL SYSTEMS OPERATIONAL</p>
+</div>
+</div>
+<!-- RIGHT PANEL -->
+<div class="col-lg-8 ps-lg-5">
+<div class="row g-4">
+<!-- NAV GROUPS -->
+<div class="col-6 col-md-4">
+<h6 class="text-white fw-bold tracking-wider mb-4">SOLUTIONS</h6>
+<ul class="list-unstyled footer-links-h2">
+<li><a href="services-2.html">Agricultural Mapping</a></li>
+<li><a href="services-2.html">Land Surveying</a></li>
+<li><a href="services-2.html">Construction Monitoring</a></li>
+<li><a href="services-2.html">Infrastructure Inspection</a></li>
+<li><a href="services-2.html">Industrial Analytics</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4">
+<h6 class="text-white fw-bold tracking-wider mb-4">PLATFORM</h6>
+<ul class="list-unstyled footer-links-h2">
+<li><a href="about-2.html">Drone Intelligence</a></li>
+<li><a href="services-2.html">Flight Monitoring</a></li>
+<li><a href="services-2.html">Data Processing</a></li>
+<li><a href="services-2.html">3D Mapping</a></li>
+<li><a href="dashboard.html">Analytics Dashboard</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-4">
+<h6 class="text-white fw-bold tracking-wider mb-4">COMPANY</h6>
+<ul class="list-unstyled footer-links-h2 mb-4">
+<li><a href="about-2.html">About SKYVISION</a></li>
+<li><a href="portfolio-2.html">Case Studies</a></li>
+<li><a href="blog-2.html">Blog</a></li>
+<li><a href="contact-2.html">Careers</a></li>
+<li><a href="contact-2.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="row border-top border-secondary pt-4 mt-4 text-white-50 align-items-center" style="font-size:0.75rem; text-transform: uppercase; letter-spacing:1px;">
+<div class="col-md-4 mb-3 mb-md-0">
+                © 2026 SKYVISION Aerial Intelligence.
+             </div>
+<div class="col-md-4 text-center mb-3 mb-md-0">
+<span class="status-dot-h2 bg-success rounded-circle d-inline-block me-2" style="width:6px;height:6px; vertical-align: middle;"></span> SYSTEM STATUS: OPERATIONAL
+             </div>
+<div class="col-md-4 text-md-end footer-bottom-links-h2">
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Back to top -->
+<a aria-label="Back to top" class="back-to-top position-fixed bottom-0 end-0 m-4 d-flex align-items-center justify-content-center bg-primary text-white rounded-circle shadow-lg" href="#" id="backToTop" style="width: 50px; height: 50px; z-index: 999; display: none !important; opacity: 0; transition: 0.3s;">
+<i class="bi bi-arrow-up fs-5"></i>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+</body>
+</html>
+
