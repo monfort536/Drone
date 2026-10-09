@@ -71,34 +71,41 @@ document.querySelectorAll('.rtl-toggle-btn, #rtlToggle').forEach(toggle => {
 
 // Set Active Nav Link Automatically
 document.addEventListener('DOMContentLoaded', () => {
-  // Get the last segment of the path, removing any query strings or hashes
-  let pathSegments = window.location.pathname.split('/').filter(s => s.length > 0);
-  let currentPath = pathSegments.length > 0 ? pathSegments.pop() : '';
-  currentPath = currentPath.split('?')[0].split('#')[0];
-  const navLinks = document.querySelectorAll('.navbar-custom .nav-link, .navbar-custom .dropdown-item');
-  
-  navLinks.forEach(link => {
-    let linkPath = link.getAttribute('href');
-    if (!linkPath || linkPath === '#') return;
-    
-    // Clean up paths for comparison (handle .html extension stripping in some hosts)
-    linkPath = linkPath.split('?')[0].split('#')[0];
-    const cleanLinkPath = linkPath.replace('.html', '');
-    const cleanCurrentPath = currentPath.replace('.html', '');
-    
-    // Check if the link matches the current path, OR if it's the root path matching index.html
-    if (
-      cleanLinkPath === cleanCurrentPath || 
-      (currentPath === '' && cleanLinkPath === 'index')
-    ) {
-      link.classList.add('active');
-      
-      // If it's a dropdown item, also highlight the parent dropdown toggle
-      const parentDropdown = link.closest('.dropdown');
-      if (parentDropdown) {
-        const toggle = parentDropdown.querySelector('.dropdown-toggle');
-        if (toggle) toggle.classList.add('active');
-      }
+  const pageName = pathname => pathname.replace(/\/+$/, '').split('/').pop().replace(/\.html$/i, '') || 'index';
+  const currentPage = pageName(window.location.pathname);
+  const detailSections = {
+    'service-details': 'services',
+    'portfolio-details': 'portfolio',
+    'blog-details': 'blog'
+  };
+  const detailPrefix = Object.keys(detailSections).find(prefix =>
+    currentPage === prefix || currentPage.startsWith(`${prefix}-`)
+  );
+
+  document.querySelectorAll('.navbar-custom .nav-link, .navbar-custom .dropdown-item').forEach(link => {
+    link.classList.remove('active');
+    link.removeAttribute('aria-current');
+  });
+
+  document.querySelectorAll('.navbar-custom .nav-link, .navbar-custom .dropdown-item').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+
+    const target = new URL(href, window.location.href);
+    if (target.origin !== window.location.origin) return;
+    const linkPage = pageName(target.pathname);
+    const matchesSection = detailPrefix && linkPage.replace(/-2$/, '') === detailSections[detailPrefix];
+    if (linkPage !== currentPage && !matchesSection) return;
+
+    link.classList.add('active');
+    link.setAttribute('aria-current', linkPage === currentPage ? 'page' : 'location');
+
+    // Keep Home highlighted when either home page is selected in its dropdown.
+    const parentDropdown = link.closest('.dropdown');
+    const toggle = parentDropdown && parentDropdown.querySelector('.nav-link.dropdown-toggle');
+    if (toggle) {
+      toggle.classList.add('active');
+      toggle.setAttribute('aria-current', 'location');
     }
   });
 });
