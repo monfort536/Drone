@@ -149,6 +149,14 @@ img { max-width: 100%; height: auto; border-radius: var(--radius-sm); }
   box-shadow: var(--shadow-sm);
 }
 .navbar-brand { font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; color: var(--navy); }
+
+/* Keep the SKYVISION wordmark the same size in every shared header/footer. */
+.navbar-custom .navbar-brand,
+.footer-home1 a > h3,
+.footer-home2 a > h3 {
+  font-size: 1.5rem !important;
+  line-height: 1.2;
+}
 .nav-link { font-weight: 500; color: var(--dark-text) !important; padding: 10px 15px !important; }
 .nav-link:hover, .nav-link.active { color: var(--electric-blue) !important; }
 .dropdown-menu-custom {
@@ -505,7 +513,9 @@ body.dark-mode .hover-shadow:hover { box-shadow: 0 15px 30px rgba(0,0,0,0.5) !im
 @media (max-width: 991px) {
   .hero-title { font-size: 3rem !important; }
   .floating-stat { display: none !important; }
-  .navbar-custom .navbar-brand { font-size: 1.25rem !important; }
+  .navbar-custom .navbar-brand,
+  .footer-home1 a > h3,
+  .footer-home2 a > h3 { font-size: 1.25rem !important; }
 }
 
 /* =========================================
